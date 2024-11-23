@@ -85,7 +85,7 @@ a:hover {
     color: var(--solid-background);
 }
 
-/* ===== Styles de la Navbar ===== */
+/* ===== Styles de la===== */
 .navbar .navbar-brand {
     color: var(--high-contrast-text);
     font-weight: 700;
@@ -518,6 +518,48 @@ button:hover, .btn:hover {
     box-shadow: none;
 }
 
+/* ===== Styles pour le bouton Hamburger ===== */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+.navbar-toggler-icon {
+    background-image: none !important; /* Supprime l'image de fond par défaut */
+}
+
+.navbar-toggler-icon {
+    width: 24px;
+    height: 17px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Styles pour les barres du hamburger */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon .icon-bar {
+    content: '';
+    background-color: var(--high-contrast-text);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+}
+
+.navbar-toggler-icon::before {
+    top: 0;
+}
+
+.navbar-toggler-icon .icon-bar {
+    top: 7.5px;
+}
+
+.navbar-toggler-icon::after {
+    top: 15px;
+}
+
+/* ===== Media ====== */
 @media screen and (max-width: 768px) {
     .hero {
         padding-left: 20px; /* Ajoute du padding à gauche */
@@ -529,10 +571,13 @@ button:hover, .btn:hover {
         line-height: 1.2; /* Améliore l'espacement vertical */
     }
 
-    .hero h3 {
-        font-size: 1.5rem; /* Ajuste la taille du sous-titre */
+    .hero h3 .typed,
+    .hero h3 .typed span {
+        font-size: 1.5rem;
         margin-top: 10px; /* Ajoute un espacement avec le titre */
         margin-bottom: 20px; /* Ajoute de l'espacement avec les éléments suivants */
+
     }
 }
+
 
