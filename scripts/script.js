@@ -48,3 +48,24 @@ const themeSwitch = document.querySelector('.checkbox');
 if (themeSwitch) {
     themeSwitch.addEventListener('change', switchTheme);
 }
+
+//Bouton telechargeur de mon CV
+document.getElementById('download-cv').addEventListener('click', function() {
+    //S'ouvre dans une autre page
+    window.open('assets/ZHAIRI_Mohammed_CV_2.pdf', '_blank');        
+    // Crée un élément <a> temporaire
+    var a = document.createElement('a');
+    a.href = 'assets/ZHAIRI_Mohammed_CV_2.pdf';
+    a.download = 'ZHAIRI_Mohammed_CV_2.pdf'; 
+        
+    // Ajoute l'élément au DOM
+    document.body.appendChild(a);
+
+    // Déclenche le clic sur le lien
+    a.click();
+
+    // Supprime l'élément du DOM
+    document.body.removeChild(a);
+
+    });
+
