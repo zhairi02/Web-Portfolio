@@ -517,3 +517,14 @@ button:hover, .btn:hover {
     background-color: var(--dark);
     box-shadow: none;
 }
+
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 20px; /* Ajoute du padding autour de toute la section */
+    }
+
+    .hero h2, 
+    .hero h3 {
+        margin: 10px 0; /* Ajuste les marges pour éviter un effet écrasé */
+    }
+}
