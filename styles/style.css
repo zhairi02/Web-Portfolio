@@ -520,11 +520,19 @@ button:hover, .btn:hover {
 
 @media screen and (max-width: 768px) {
     .hero {
-        padding: 20px; /* Ajoute du padding autour de toute la section */
+        padding-left: 20px; /* Ajoute du padding à gauche */
+        padding-right: 20px; /* Ajoute du padding à droite */
     }
 
-    .hero h2, 
+    .hero h2 {
+        font-size: 3rem; /* Ajuste la taille pour les petits écrans */
+        line-height: 1.2; /* Améliore l'espacement vertical */
+    }
+
     .hero h3 {
-        margin: 10px 0; /* Ajuste les marges pour éviter un effet écrasé */
+        font-size: 1.5rem; /* Ajuste la taille du sous-titre */
+        margin-top: 10px; /* Ajoute un espacement avec le titre */
+        margin-bottom: 20px; /* Ajoute de l'espacement avec les éléments suivants */
     }
 }
+
