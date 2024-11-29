@@ -10,7 +10,7 @@ if (selectTyped && selectTyped.getAttribute('data-typed-items')) {
     new Typed('.typed', {
         strings: typed_strings,
         loop: false, // Ne pas boucler l'animation pour une meilleure expérience utilisateur
-        typeSpeed: 60,
+        typeSpeed: 40,
         backSpeed: 50,
         backDelay: 2000
     });
