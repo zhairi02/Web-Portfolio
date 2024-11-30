@@ -55,3 +55,14 @@ document.getElementById('download-cv').addEventListener('click', function() {
     window.open('assets/ZHAIRI_Mohammed_CV_2.pdf', '_blank');        
     
     });
+
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    const heroSection = document.querySelector('.hero');
+   
+    if (window.scrollY > heroSection.offsetHeight - navbar.offsetHeight) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
