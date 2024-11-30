@@ -55,4 +55,3 @@ document.getElementById('download-cv').addEventListener('click', function() {
     window.open('assets/ZHAIRI_Mohammed_CV_2.pdf', '_blank');        
     
     });
-

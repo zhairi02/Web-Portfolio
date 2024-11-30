@@ -1,9 +1,9 @@
 <?php
 // Database connection details
-$host = 'sql307.infinityfree.com'; // Replace XXX with your database host
-$dbname = 'if0_37814977_contact_db'; // Replace with your database name
-$username = 'if0_37814977'; // Replace with your username
-$password = '3qRtSD8KINtdFw'; // Replace with your database password
+$host = 'localhost';
+$dbname = 'mon_contact_db';
+$username = 'root';
+$password = '';
 
 // Connect to MySQL
 $conn = new mysqli($host, $username, $password, $dbname);
