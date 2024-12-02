@@ -5,7 +5,7 @@
     --heading-font: "Courier New", Courier, monospace;
     --nav-font: "Courier New", Courier, monospace;
 
-    /* Palette de couleurs PurpleDark */
+    /* Palette de couleurs */
     --purple-1: #18111b;
     --purple-2: #1e1523;
     --purple-3: #301c3b;
@@ -65,6 +65,10 @@
     --high-contrast-text: var(--purple-12);      /* Texte à fort contraste */
 }
 
+
+
+
+
 /* ===== Styles de Base ===== */
 body {
     font-family: var(--default-font);
@@ -85,7 +89,10 @@ a:hover {
     color: var(--solid-background);
 }
 
-/* ===== Styles de la===== */
+
+
+
+/* ===== Styles de la navbar ===== */
 .navbar {
     transition: background-color 0.3s ease, backdrop-filter 0.3s ease; 
     background-color: transparent; 
@@ -120,6 +127,9 @@ a:hover {
     color: var(--solid-background);
     z-index: 1030;
 }
+
+
+
 
 /* ===== Section Hero ===== */
 .hero {
@@ -238,6 +248,11 @@ a:hover {
     color: var(--high-contrast-text);
 }
 
+
+
+
+
+
 /* Styles des icônes sociales */
 .social-icons a {
     background: var(--ui-element-background);
@@ -260,6 +275,11 @@ a:hover {
     color: var(--ui-element-background);
     text-decoration: none;
 }
+
+
+
+
+
 
 /* ===== Section À Propos ===== */
 #about {
@@ -303,6 +323,11 @@ a:hover {
 #about .btn:hover {
     background: var(--hovered-solid-background);
 }
+
+
+
+
+
 
 /* ===== Section Projets ===== */
 #projects {
@@ -389,6 +414,11 @@ a:hover {
     color: var(--ui-element-background);
     cursor: pointer;
 }
+
+
+
+
+
 
 /* ===== Section Contact ===== */
 #contact {
@@ -494,6 +524,12 @@ a:hover {
     transform: rotate(45deg);
   }
   
+
+
+
+
+
+
 /* ===== Pied de Page ===== */
 footer {
     background: var(--ui-element-background);
@@ -523,6 +559,10 @@ footer .social-icons a:hover {
     color: var(--ui-element-background);
 }
 
+
+
+
+
 /* ===== Boutons ===== */
 button, .btn {
     background: var(--solid-background);
@@ -538,7 +578,6 @@ button:hover, .btn:hover {
     background: var(--hovered-solid-background);
 }
 
-/* From Uiverse.io by adamgiebl */ 
 .cssbuttons-io-button {
     display: flex;
     align-items: center;
@@ -571,6 +610,10 @@ button:hover, .btn:hover {
 }
 
 
+
+
+
+
 /* ===== Responsive Design ===== */
 @media screen and (max-width: 990px) {
     #skills .card {
@@ -589,6 +632,10 @@ button:hover, .btn:hover {
         width: 70px;
     }
 }
+
+
+
+
 
 /* ===== Styles du Commutateur de Thème ===== */
 .toggle-switch {
@@ -649,6 +696,11 @@ button:hover, .btn:hover {
     box-shadow: none;
 }
 
+
+
+
+
+
 /* ===== Styles pour le bouton Hamburger ===== */
 .navbar-toggler {
     border: none;
@@ -690,11 +742,16 @@ button:hover, .btn:hover {
     top: 15px;
 }
 
+
+
+
+
+
 /* ===== Media ====== */
 @media screen and (max-width: 768px) {
     .hero {
-        padding-left: 20px; /* Ajoute du padding à gauche */
-        padding-right: 20px; /* Ajoute du padding à droite */
+        padding-left: 20px; 
+        padding-right: 20px; 
     }
 
     .hero h2 {
@@ -710,6 +767,10 @@ button:hover, .btn:hover {
 
     }
 }
+
+
+
+
 
 /* ===== Style Carte Projets ===== */
 .card {
@@ -799,3 +860,4 @@ button:hover, .btn:hover {
     color: var(--solid-background); 
   }
   
+

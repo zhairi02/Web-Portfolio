@@ -1,14 +1,14 @@
 <?php
-// Database connection details
+// Details de connexion 
 $host = 'localhost';
 $dbname = 'mon_contact_db';
 $username = 'root';
 $password = '';
 
-// Connect to MySQL
+// Connexion a mySQL
 $conn = new mysqli($host, $username, $password, $dbname);
 
-// Check connection
+// Verif rapide de la connexion
 if ($conn->connect_error) {
     die("Erreur de connexion : " . $conn->connect_error);
 }
